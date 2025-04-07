@@ -1,0 +1,130 @@
+/* Reset and Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container: Two-column Layout using CSS Grid */
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Controls Panel (Left Column) */
+.controls-panel {
+  padding: 20px;
+  border-right: 1px solid #555;
+}
+
+.controls-panel h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.control-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.control-group label {
+  margin-bottom: 5px;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+}
+
+/* Button Group: Vertical Stacking using Flexbox */
+.button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group button {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #444;
+  border: none;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #666;
+}
+
+.button-group button:active {
+  background-color: #888;
+}
+
+/* Display Area (Right Column) */
+.display-area {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#creatureDisplay {
+  background-color: #222;
+  border: 1px solid #555;
+  padding: 15px;
+  overflow: auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.1;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+/* Naming & Saving Section */
+.save-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.save-section input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.save-section button {
+  padding: 5px 10px;
+  background-color: #444;
+  border: none;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-section button:hover {
+  background-color: #666;
+}
+
+.save-section button:active {
+  background-color: #888;
+}

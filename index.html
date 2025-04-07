@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCII Creature Lab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Controls Panel (Left Column) -->
+      <aside class="controls-panel">
+        <h2>Creature Parameters</h2>
+        <div class="control-group">
+          <label for="bodyWidth">Body Width</label>
+          <input
+            type="range"
+            id="bodyWidth"
+            min="5"
+            max="30"
+            step="1"
+            value="15"
+          />
+          <span id="bodyWidthVal">15</span>
+        </div>
+        <div class="control-group">
+          <label for="bodyHeight">Body Height</label>
+          <input
+            type="range"
+            id="bodyHeight"
+            min="3"
+            max="20"
+            step="1"
+            value="10"
+          />
+          <span id="bodyHeightVal">10</span>
+        </div>
+        <div class="control-group">
+          <label for="numberOfLimbs">Limbs</label>
+          <input
+            type="range"
+            id="numberOfLimbs"
+            min="0"
+            max="8"
+            step="1"
+            value="4"
+          />
+          <span id="numberOfLimbsVal">4</span>
+        </div>
+        <div class="control-group">
+          <label for="limbComplexity">Limb Complexity</label>
+          <input
+            type="range"
+            id="limbComplexity"
+            min="1"
+            max="5"
+            step="1"
+            value="2"
+          />
+          <span id="limbComplexityVal">2</span>
+        </div>
+        <div class="control-group">
+          <label for="headSize">Head Size</label>
+          <input
+            type="range"
+            id="headSize"
+            min="1"
+            max="3"
+            step="1"
+            value="2"
+          />
+          <span id="headSizeVal">2</span>
+        </div>
+        <div class="control-group">
+          <label for="numberOfEyes">Eyes</label>
+          <input
+            type="range"
+            id="numberOfEyes"
+            min="1"
+            max="5"
+            step="1"
+            value="2"
+          />
+          <span id="numberOfEyesVal">2</span>
+        </div>
+        <div class="control-group">
+          <label for="textureDensity">Texture</label>
+          <input
+            type="range"
+            id="textureDensity"
+            min="0"
+            max="1"
+            step="0.1"
+            value="0.3"
+          />
+          <span id="textureDensityVal">0.3</span>
+        </div>
+        <div class="control-group">
+          <label for="symmetryFactor">Symmetry</label>
+          <input
+            type="range"
+            id="symmetryFactor"
+            min="0"
+            max="1"
+            step="0.1"
+            value="0.8"
+          />
+          <span id="symmetryFactorVal">0.8</span>
+        </div>
+        <div class="button-group">
+          <button id="generateBtn">Generate Creature</button>
+          <button id="randomizeBtn">Randomize Parameters</button>
+        </div>
+      </aside>
+
+      <!-- Display Area (Right Column) -->
+      <main class="display-area">
+        <pre id="creatureDisplay"></pre>
+        <div class="save-section">
+          <input
+            type="text"
+            id="creatureNameInput"
+            placeholder="Name your creature?"
+          />
+          <button id="saveBtn">Save Creature</button>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
